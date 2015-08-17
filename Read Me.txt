@@ -1,0 +1,12 @@
+The zabbix data collector is designed to collect data directly from the Zabbix database.
+
+At the start of the script is held the database connection information that will be required to be changed to match your installation details.
+
+username=zabbix
+database=zabbix
+password=mypassword
+hostname=10.10.0.1
+
+Its usage is as follows: ./zabbix_data_collector.sh <Hostname> <Metric> <Start_time_unix_time> <end_time_unix_time>
+
+An example of this is:   ./zabbix_data_collector.sh testnode1 power 1439337600 1439373722
